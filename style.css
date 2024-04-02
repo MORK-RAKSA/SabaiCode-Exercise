@@ -95,8 +95,8 @@ h1 {
 .download-details{
     display: flex;
     justify-content: space-between;
-    color: #fff;
-    font-weight: 300;
+    color: #6f6f6f;
+    font-weight: 200;
 }
 
 @media only screen and (max-width: 800px) {
