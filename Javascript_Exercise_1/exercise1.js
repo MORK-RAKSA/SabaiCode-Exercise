@@ -61,9 +61,8 @@ for (let i = 1; i <= 10; i++) {
   if (i % 2 === 0) {
     evenNum++;
     console.log(i + " is even."); // result:
-  } else {
-    //  1 is odd, 2 is even, 3 is odd, 4 is even, 5 is odd,
-    oddNum++; //  6 is even, 7 is even, 8 is odd, 9 is even,  10 is even.
+  } else {                        //  1 is odd, 2 is even, 3 is odd, 4 is even, 5 is odd,
+    oddNum++;                     //  6 is even, 7 is even, 8 is odd, 9 is even,  10 is even.
     console.log(i + " is odd.");
   }
 }
@@ -86,8 +85,7 @@ for (let i = 1; i <= 100; i++) {
 // Write a program that uses a loop to calculate the sum of all numbers in an array.
 let list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let sum = 0;
-for (let i = 0; i < list.length; i++) {
-  result: 55;
+for (let i = 0; i < list.length; i++) {     // result: 55; 
   sum = sum + list[i];
 }
 console.log(sum);
