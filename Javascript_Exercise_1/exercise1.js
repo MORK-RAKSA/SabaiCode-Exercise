@@ -91,23 +91,17 @@ for (let i = 0; i < list.length; i++) {     // result: 55;
 console.log(sum);
 
 // Prime Number from 1 to 100
-function primeNum(num) {
-  if (num <= 1) {
-    return false;
-  }
-  for (let i = 2; i <= Math.sqrt(num); i++) {
-    if (num % i === 0) {
-      return false;
-    }
-  }
+const isPrime = num => {
+  if (num <= 1) return false;
+  for (let i = 2; i * i <= num; i++)
+    if (num % i === 0) return false;
   return true;
-}
-console.log("Prime number between 1 and 100:");
-for (let i = 1; i <= 100; i++) {
-  if (primeNum(i)) {
+};
+
+console.log("Prime numbers between 1 and 100:");
+for (let i = 2; i <= 100; i++) 
+  if (isPrime(i))
     console.log(i);
-  }
-}
 
 // Find Largest Number in array list
 function findLargestNumber(array) {
