@@ -101,7 +101,7 @@ body::-webkit-scrollbar {
     width: 15%;
 }
 .download-detail {
-    font-size: 12px;
+    font-size: 14px;
     width:80%;
     height: 125px;
     border-left: 0.5px solid #4b4b4b;
@@ -109,7 +109,7 @@ body::-webkit-scrollbar {
 }
 .download-detail .text {
     color: rgb(116, 148, 255);
-    font-weight: bold;
+    font-weight: 400;
     cursor: pointer;
 }
 .download-detail .text a {
@@ -117,7 +117,17 @@ body::-webkit-scrollbar {
     text-decoration: none;
 }
 .download-action {
+    margin-right: 10px;
     width: 5%;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.download-action:hover {
+    transition: 0.2s;
+    background: #2c2c2c;
+    color: #b1b1b1;
 }
 
 .addFile {
@@ -127,8 +137,8 @@ body::-webkit-scrollbar {
     width: 40px;
     height: 40px;
     border-radius: 50px;
-    bottom: 80px;
-    right: 20px;
+    bottom: 60px;
+    right: 40px;
     position: fixed;
     background: #6a6a6a;
     transition: 0.3s;
@@ -149,8 +159,8 @@ body::-webkit-scrollbar {
     width: 45px;
     height: 45px;
     border-radius: 50px;
-    bottom: 80px;
-    right: 20px;
+    bottom: 60px;
+    right: 40px;
     position: fixed;
     background: #0055ff;
     box-shadow: 0 0px 20px 0 rgba(63, 117, 255, 0.655);
@@ -183,7 +193,8 @@ body::-webkit-scrollbar {
 }
 
 .modal-form button[type="submit"] {
-    background-color: #007bff;
+    float: right;
+    background-color: #00c74f;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -192,5 +203,28 @@ body::-webkit-scrollbar {
 }
 
 .modal-form button[type="submit"]:hover {
-    background-color: #50a5ff;
+    background-color: #37d366;
+}
+.modal-form .btnCancel {
+    float: right;
+    margin-right: 10px;
+    background-color: #e00000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.modal-form .btnCancel:hover {
+    background-color: #ff4646;
+}
+
+#uploadForm input[type="file"]::file-selector-button{
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    border-style: none;
+    padding:10px 10px;
+    color: #ffffff;
 }
