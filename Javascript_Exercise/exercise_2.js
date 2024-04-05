@@ -47,7 +47,7 @@
 //         }
 //     }
 // }
-// filterProduct(products)
+// filterProduct(products) 
 
 
 // 6.Write a function that could check if the password provided is strong or not.
@@ -104,21 +104,22 @@
 
 
 
-// 9. 
+// // 9. 
 
-function median(arr) {
-    let sortedArr = arr.slice().sort((a, b) => a - b);
-    let n = sortedArr.length;
-    if (n % 2 === 0) {
-        let midLeft = sortedArr[n / 2 - 1];
-        let midRight = sortedArr[n / 2];
-        return (midLeft + midRight) / 2;
-    } else {
-        return sortedArr[Math.floor(n / 2)];
-    }
-}
+// function findMedian(arr) {
+//     arr.sort((a, b) => a - b);
+//     let middleIndex = Math.floor(arr.length / 2);
+    
+//     if (arr.length % 2 === 0) {
+//         return (arr[middleIndex - 1] + arr[middleIndex]) / 2;
+//     } else {
+//         return arr[middleIndex];
+//     }
+// }
 
-let arr = [1, 3, 5, 2, 4];
-console.log("Median:", median(arr));
+// let list = [1, 2, 3, 4, 5, 6];
+// let medianValue = findMedian(list);
+// console.log("Median value:", medianValue);
+
 
 
