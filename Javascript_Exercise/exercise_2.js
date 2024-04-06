@@ -3,7 +3,7 @@ function showName(names){console.log(`Greeting ${names}, nice to see you!`);}
 showName('Mork Raksa')  //result: Greeting Mork Raksa, nice to see you.
 
 
-2. Write an expression function that take two parameters “num1” & “num2” and returns their sum
+// 2. Write an expression function that take two parameters “num1” & “num2” and returns their sum
 const sum = function sum(num1, num2){return num1 + num2}
 console.log(sum(5, 7));
 
@@ -117,8 +117,8 @@ function findMedian(arr) {
     }
 }
 
-let list = [1, 2, 3, 4, 5, 6];
-let medianValue = findMedian(list);
+let list1 = [1, 2, 3, 4, 5, 6];
+let medianValue = findMedian(list1);
 console.log("Median value:", medianValue);
 
 
