@@ -122,4 +122,15 @@
 // console.log("Median value:", medianValue);
 
 
+// 10. Write a function that takes a non negative number as a parameter and returns the factorial of that parameter
+// function f(num) {
+//     if (num === 0 || num === 1) {
+//         return 1;
+//     }
+//     else{
+//         return num * f(num - 1);
+//     }
+// }
+// console.log(f(-2));
+
 
