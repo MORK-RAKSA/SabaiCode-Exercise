@@ -116,7 +116,6 @@ function findMedian(arr) {
         return arr[middleIndex];
     }
 }
-
 let list1 = [1, 2, 3, 4, 5, 6];
 let medianValue = findMedian(list1);
 console.log("Median value:", medianValue);
