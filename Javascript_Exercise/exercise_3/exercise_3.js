@@ -23,7 +23,7 @@ function arrayEventNum(arr, eventNum) {
   }
   return evenNumbers;
 }
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 console.log(arrayEventNum(numbers, eventNum));
 
 // 3. Use Node.js's fs module to read a file asynchronously:`fs.readFile`.
