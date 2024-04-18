@@ -5,6 +5,8 @@
 //     return users.filter(user => user.age > 18);
 // }
 
+// const { setMaxListeners } = require("stream");
+
 // const users = [
 //     { name: 'raksa', age: 25 },
 //     { name: 'lol', age: 17 },
@@ -51,14 +53,14 @@
 
 
 // 5.
-// function MaxNum(num) {
-//     return num.reduce((max, current) => {
-//         return current > max ? current : max;
-//     }, num[0]);
-// }
-// const num = [10, 5, 20, 15, 8];
-// const maxNum = MaxNum(num);
-// console.log(maxNum);
+function MaxNum(num) {
+    return num.reduce((max, current) => {
+        return current > max ? current : max;
+    }, num[0]);
+}
+const num = [10, 5, 20, 15, 8];
+const maxNum = MaxNum(num);
+console.log(maxNum);
 
 
 // 6.
