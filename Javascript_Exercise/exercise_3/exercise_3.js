@@ -34,24 +34,24 @@
 // Write a function that takes a file path and a callback. Use the callback
 // to print the contents of the file to the console.
 // const fs = require('fs');
-// function readFileAsync(filepath, callback) {
-//   fs.readFile(filepath, 'utf8', (e, data) => {
-//     if (e) {
-//       console.error(e);
-//       callback(e);
-//     } else {
-//       callback(null, data);
-//     }
-//   });
-// }
-// const filepath = 'Y:/E5-Year3-G25/Web Design/HTML/Chrome Download/Javascript_Exercise/Test_Exercise_3.3.txt';
-// readFileAsync(filepath, (e, data) => {
-//   if (e) {
-//     console.error('Error reading file:', e);
-//   } else {
-//     console.log(`content: \n${data}`);
-//   }
-// });
+function readFileAsync(filepath, callback) {
+  fs.readFile(filepath, 'utf8', (e, data) => {
+    if (e) {
+      console.error(e);
+      callback(e);
+    } else {
+      callback(null, data);
+    }
+  });
+}
+const filepath = 'Y:/E5-Year3-G25/Web Design/HTML/Chrome Download/Javascript_Exercise/Test_Exercise_3.3.txt';
+readFileAsync(filepath, (e, data) => {
+  if (e) {
+    console.error('Error reading file:', e);
+  } else {
+    console.log(`content: \n${data}`);
+  }
+});
 
 // 4. Use Node.js's fs module to write a file asynchronously `fs.writeFile`. Write a function that takes
 // a file path and a callback. Use the callback to write the contents of the file to the file path.
