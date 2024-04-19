@@ -40,10 +40,10 @@
 
 
 // 7
-// function findProperties(obj, ...filterPro) {
-//     const findObj = {...obj};
-//     filterPro.forEach(pro => delete findObj[pro]);
-//     return findObj;
-// }
-// const obj = {a: 1, b: 2, c: 3, d: 4}
-// console.log(findProperties(obj, "b", "d"))
+function findProperties(obj, ...filterPro) {
+    const findObj = {...obj};
+    filterPro.forEach(pro => delete findObj[pro]);
+    return findObj;
+}
+const obj = {a: 1, b: 2, c: 3, d: 4}
+console.log(findProperties(obj, "b", "d"))
