@@ -77,47 +77,47 @@
 //   })
 
 // 2.1
-const fs = require("fs")
-function readFilePromise(filepath) {
-  return new Promise((resolve, reject) => {
-    fs.readFile(filepath, 'utf8', (err, data) => {
-      if (err) {
-        reject(err)
-      } else {
-        resolve(data)
-      }
-    })
-  })
-}
-function writeFilePromise(filePath, content) {
-  return new Promise((resolve, reject) => {
-    fs.appendFile(filePath, content, 'utf8', (err) => {
-      if (err) {
-        reject(err)
-      } else {
-        console.log(`written successfully!!!`)
-        resolve(content)
-      }
-    })
-  })
-}
+// const fs = require("fs")
+// function readFilePromise(filepath) {
+//   return new Promise((resolve, reject) => {
+//     fs.readFile(filepath, 'utf8', (err, data) => {
+//       if (err) {
+//         reject(err)
+//       } else {
+//         resolve(data)
+//       }
+//     })
+//   })
+// }
+// function writeFilePromise(filePath, content) {
+//   return new Promise((resolve, reject) => {
+//     fs.appendFile(filePath, content, 'utf8', (err) => {
+//       if (err) {
+//         reject(err)
+//       } else {
+//         console.log(`written successfully!!!`)
+//         resolve(content)
+//       }
+//     })
+//   })
+// }
 
 // let fileContent = '\t\t\t\tMork Raksa\n'
 // const filepath = 'Y:/E5-Year3-G25/Web Design/HTML/Chrome Download/Javascript_Exercise/exercise_3/Test_Exercise_3.3.txt'
 
-writeFilePromise(filepath,fileContent)
-readFilePromise(filepath)
-  .then(data => {
-    console.log('---- Read file content ----')
-    console.log(data)
-    return fileContent
-  })
-  .then(contentToWrite => {
-    console.log('Data :', contentToWrite)
-  })
-  .catch(error => {
-    console.error('Error:', error)
-  })
+// writeFilePromise(filepath,fileContent)
+// readFilePromise(filepath)
+//   .then(data => {
+//     console.log('---- Read file content ----')
+//     console.log(data)
+//     return fileContent
+//   })
+//   .then(contentToWrite => {
+//     console.log('Data :', contentToWrite)
+//   })
+//   .catch(error => {
+//     console.error('Error:', error)
+//   })
 
 // 3 // old one
 // const fs = require("fs").promises
@@ -157,19 +157,19 @@ async function readFileAsync(filepath) {
     console.error('Error reading file:', err)
   }
 }
-
+ 
 async function writeFileAsync(filePath, content) {
   try {
     await fs.appendFile(filePath, content)
     console.log('Successfully')
   } catch (err) {
     console.error('Error :', err)
-    throw err
   }
 }
 
+
 let fileContent = 'This is Async and Await function'
-const filepath = 'Y:/E5-Year3-G25/Web Design/HTML/Chrome Download/Javascript_Exercise/exercise_3/Test_Exercise_3.4.txt'
+const filepath = 'Y:/E5-Year3-G25/Web Design/HTML/Chrome Download/Javascript_Exercise/exercise_3/Test_Exercise_3.4.txt';
 
 (async () => {
   try {
