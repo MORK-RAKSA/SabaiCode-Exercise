@@ -156,8 +156,8 @@ async function readFileAsync(filepath) {
   } catch (err) {
     console.error('Error reading file:', err)
   }
-}
- 
+} 
+  
 async function writeFileAsync(filePath, content) {
   try {
     await fs.appendFile(filePath, content)
@@ -165,17 +165,15 @@ async function writeFileAsync(filePath, content) {
   } catch (err) {
     console.error('Error :', err)
   }
-}
-
+} 
 
 let fileContent = 'This is Async and Await function'
 const filepath = 'Y:/E5-Year3-G25/Web Design/HTML/Chrome Download/Javascript_Exercise/exercise_3/Test_Exercise_3.4.txt';
-
 (async () => {
   try {
     const data = await readFileAsync(filepath)
     console.log('Content:', data)
-
+  
     await writeFileAsync(filepath, fileContent)
   } catch (err) {
     console.error('Error:', err)
